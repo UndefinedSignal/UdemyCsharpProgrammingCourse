@@ -1,0 +1,16 @@
+E:\Coriolis\Dev\Git\UdemyCsharpProgrammingCourse\TestProject4Education\TestProject4Education\bin\Debug\net5.0\CSharpCourseChapter1.exe
+E:\Coriolis\Dev\Git\UdemyCsharpProgrammingCourse\TestProject4Education\TestProject4Education\bin\Debug\net5.0\CSharpCourseChapter1.deps.json
+E:\Coriolis\Dev\Git\UdemyCsharpProgrammingCourse\TestProject4Education\TestProject4Education\bin\Debug\net5.0\CSharpCourseChapter1.runtimeconfig.json
+E:\Coriolis\Dev\Git\UdemyCsharpProgrammingCourse\TestProject4Education\TestProject4Education\bin\Debug\net5.0\CSharpCourseChapter1.runtimeconfig.dev.json
+E:\Coriolis\Dev\Git\UdemyCsharpProgrammingCourse\TestProject4Education\TestProject4Education\bin\Debug\net5.0\CSharpCourseChapter1.dll
+E:\Coriolis\Dev\Git\UdemyCsharpProgrammingCourse\TestProject4Education\TestProject4Education\bin\Debug\net5.0\ref\CSharpCourseChapter1.dll
+E:\Coriolis\Dev\Git\UdemyCsharpProgrammingCourse\TestProject4Education\TestProject4Education\bin\Debug\net5.0\CSharpCourseChapter1.pdb
+E:\Coriolis\Dev\Git\UdemyCsharpProgrammingCourse\TestProject4Education\TestProject4Education\obj\Debug\net5.0\CSharpCourseChapter1.csproj.AssemblyReference.cache
+E:\Coriolis\Dev\Git\UdemyCsharpProgrammingCourse\TestProject4Education\TestProject4Education\obj\Debug\net5.0\CSharpCourseChapter1.GeneratedMSBuildEditorConfig.editorconfig
+E:\Coriolis\Dev\Git\UdemyCsharpProgrammingCourse\TestProject4Education\TestProject4Education\obj\Debug\net5.0\CSharpCourseChapter1.AssemblyInfoInputs.cache
+E:\Coriolis\Dev\Git\UdemyCsharpProgrammingCourse\TestProject4Education\TestProject4Education\obj\Debug\net5.0\CSharpCourseChapter1.AssemblyInfo.cs
+E:\Coriolis\Dev\Git\UdemyCsharpProgrammingCourse\TestProject4Education\TestProject4Education\obj\Debug\net5.0\CSharpCourseChapter1.csproj.CoreCompileInputs.cache
+E:\Coriolis\Dev\Git\UdemyCsharpProgrammingCourse\TestProject4Education\TestProject4Education\obj\Debug\net5.0\CSharpCourseChapter1.dll
+E:\Coriolis\Dev\Git\UdemyCsharpProgrammingCourse\TestProject4Education\TestProject4Education\obj\Debug\net5.0\ref\CSharpCourseChapter1.dll
+E:\Coriolis\Dev\Git\UdemyCsharpProgrammingCourse\TestProject4Education\TestProject4Education\obj\Debug\net5.0\CSharpCourseChapter1.pdb
+E:\Coriolis\Dev\Git\UdemyCsharpProgrammingCourse\TestProject4Education\TestProject4Education\obj\Debug\net5.0\CSharpCourseChapter1.genruntimeconfig.cache

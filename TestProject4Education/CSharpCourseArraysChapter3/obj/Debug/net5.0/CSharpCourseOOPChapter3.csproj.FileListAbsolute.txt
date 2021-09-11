@@ -1,0 +1,16 @@
+E:\Coriolis\Dev\Git\UdemyCsharpProgrammingCourse\TestProject4Education\CSharpCourseArraysChapter3\bin\Debug\net5.0\CSharpCourseOOPChapter3.exe
+E:\Coriolis\Dev\Git\UdemyCsharpProgrammingCourse\TestProject4Education\CSharpCourseArraysChapter3\bin\Debug\net5.0\CSharpCourseOOPChapter3.deps.json
+E:\Coriolis\Dev\Git\UdemyCsharpProgrammingCourse\TestProject4Education\CSharpCourseArraysChapter3\bin\Debug\net5.0\CSharpCourseOOPChapter3.runtimeconfig.json
+E:\Coriolis\Dev\Git\UdemyCsharpProgrammingCourse\TestProject4Education\CSharpCourseArraysChapter3\bin\Debug\net5.0\CSharpCourseOOPChapter3.runtimeconfig.dev.json
+E:\Coriolis\Dev\Git\UdemyCsharpProgrammingCourse\TestProject4Education\CSharpCourseArraysChapter3\bin\Debug\net5.0\CSharpCourseOOPChapter3.dll
+E:\Coriolis\Dev\Git\UdemyCsharpProgrammingCourse\TestProject4Education\CSharpCourseArraysChapter3\bin\Debug\net5.0\ref\CSharpCourseOOPChapter3.dll
+E:\Coriolis\Dev\Git\UdemyCsharpProgrammingCourse\TestProject4Education\CSharpCourseArraysChapter3\bin\Debug\net5.0\CSharpCourseOOPChapter3.pdb
+E:\Coriolis\Dev\Git\UdemyCsharpProgrammingCourse\TestProject4Education\CSharpCourseArraysChapter3\obj\Debug\net5.0\CSharpCourseOOPChapter3.csproj.AssemblyReference.cache
+E:\Coriolis\Dev\Git\UdemyCsharpProgrammingCourse\TestProject4Education\CSharpCourseArraysChapter3\obj\Debug\net5.0\CSharpCourseOOPChapter3.GeneratedMSBuildEditorConfig.editorconfig
+E:\Coriolis\Dev\Git\UdemyCsharpProgrammingCourse\TestProject4Education\CSharpCourseArraysChapter3\obj\Debug\net5.0\CSharpCourseOOPChapter3.AssemblyInfoInputs.cache
+E:\Coriolis\Dev\Git\UdemyCsharpProgrammingCourse\TestProject4Education\CSharpCourseArraysChapter3\obj\Debug\net5.0\CSharpCourseOOPChapter3.AssemblyInfo.cs
+E:\Coriolis\Dev\Git\UdemyCsharpProgrammingCourse\TestProject4Education\CSharpCourseArraysChapter3\obj\Debug\net5.0\CSharpCourseOOPChapter3.csproj.CoreCompileInputs.cache
+E:\Coriolis\Dev\Git\UdemyCsharpProgrammingCourse\TestProject4Education\CSharpCourseArraysChapter3\obj\Debug\net5.0\CSharpCourseOOPChapter3.dll
+E:\Coriolis\Dev\Git\UdemyCsharpProgrammingCourse\TestProject4Education\CSharpCourseArraysChapter3\obj\Debug\net5.0\ref\CSharpCourseOOPChapter3.dll
+E:\Coriolis\Dev\Git\UdemyCsharpProgrammingCourse\TestProject4Education\CSharpCourseArraysChapter3\obj\Debug\net5.0\CSharpCourseOOPChapter3.pdb
+E:\Coriolis\Dev\Git\UdemyCsharpProgrammingCourse\TestProject4Education\CSharpCourseArraysChapter3\obj\Debug\net5.0\CSharpCourseOOPChapter3.genruntimeconfig.cache
