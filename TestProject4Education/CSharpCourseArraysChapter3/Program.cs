@@ -8,10 +8,26 @@ namespace CSharpCourseArraysChapter3
     {
         static void Main(string[] args)
         {
-            Calc Calculator = new Calc();
-            double square1 = Calculator.CalcTriangleSquare(40.0, 20.0, 30.0);
-            double square2 = Calculator.CalcTriangleSquare(40.0, 20.0, 30);
 
+        }
+
+        private void DivideTest()
+        {
+            Calc Calculator = new Calc();
+            if (Calculator.TryDivide(10, 2, out double result))
+            {
+                Console.WriteLine(result);
+            }
+            else
+            {
+                Console.WriteLine("Failed to divide");
+            }
+        }
+        private void CalcTest()
+        {
+            Calc Calculator = new Calc();
+            double square1 = Calculator.CalcTriangleSquare(ab: 40.0, bc: 20.0, ac: 30.0); // named arguments
+            double square2 = Calculator.CalcTriangleSquare(40.0, 20.0, 30);
         }
 
         private void RomanTest()
