@@ -1,4 +1,5 @@
-﻿using CSharpCourseOOPChapter3;
+﻿using CSharpCourseChapter1;
+using CSharpCourseOOPChapter3;
 using System;
 using System.Collections.Generic;
 
@@ -8,7 +9,95 @@ namespace CSharpCourseArraysChapter3
     {
         static void Main(string[] args)
         {
+            ModelXTeminal terminal1 = new ModelXTeminal("123");
+            terminal1.Connect();
 
+            Console.ReadLine();
+        }
+
+
+        static void RefSwapTest()
+        {
+            int a = 1;
+            int b = 2;
+
+            Swap(ref a, ref b);
+
+            Console.WriteLine($"a={a}, b={b}");
+
+            Console.ReadLine();
+
+            List<int> list = new List<int>();
+            AddNumbers(list);
+
+            foreach (var item in list)
+            {
+                Console.WriteLine(item);
+            }
+        }
+
+        static void Swap(ref int a, ref int b)
+        {
+            Console.WriteLine($"Original a={a}, b={b}");
+
+            int tmp = a;
+            a = b;
+            b = tmp;
+
+            Console.WriteLine($"Swapped a={a}, b={b}");
+        }
+
+        static void AddNumbers(List<int> numbers)
+        {
+            numbers.Add(1);
+            numbers.Add(2);
+            numbers.Add(3);
+        }
+
+        private static void ClassAndStructCopyTest()
+        {
+            TestRefStruct ts1 = new TestRefStruct(); 
+            ts1.PointRef = new PointRef() {X = 1, Y = 2 };
+            //ts1.PointRef.X = 1;
+            //ts1.PointRef.Y = 2;
+
+            TestRefStruct ts2 = ts1;
+
+            Console.WriteLine($"ts1.PointRef.X={ts1.PointRef.X}, ts1.PointRef.Y={ts1.PointRef.Y}");
+            Console.WriteLine($"ts2.PointRef.X={ts2.PointRef.X}, ts2.PointRef.Y={ts2.PointRef.Y}");
+
+            ts2.PointRef.X = 42;
+            ts2.PointRef.Y = 45;
+
+            Console.WriteLine($"ts1.PointRef.X={ts1.PointRef.X}, ts1.PointRef.Y={ts1.PointRef.Y}");
+            Console.WriteLine($"ts2.PointRef.X={ts2.PointRef.X}, ts2.PointRef.Y={ts2.PointRef.Y}");
+
+
+            Console.ReadLine();
+
+            PointVal a; // same as PointVal a = new PointVal();
+            a.X = 3;
+            a.Y = 5;
+
+            PointVal b = a;
+            b.X = 7;
+            b.Y = 10;
+
+            a.LogValues();
+            b.LogValues();
+
+            Console.WriteLine("After structs");
+
+            PointRef c = new PointRef(); // Ref links to same memory heap
+            c.X = 3;
+            c.Y = 5;
+
+            PointRef d = c;
+            d.X = 7;
+            d.Y = 10;
+
+            c.LogValues();
+            d.LogValues();
         }
 
         private void DivideTest()

@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "CSharpCourseChapter1/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/CSharpCourseChapter1.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CSharpCourseChapter1.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "CSharpCourseChapter1/1.0.0": {
+      "type": "project",
+      "path": "../TestProject4Education/CSharpCourseChapter1.csproj",
+      "msbuildProject": "../TestProject4Education/CSharpCourseChapter1.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "CSharpCourseChapter1 >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Amiel\\.nuget\\packages\\": {},
@@ -38,7 +57,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "E:\\Coriolis\\Dev\\Git\\UdemyCsharpProgrammingCourse\\TestProject4Education\\TestProject4Education\\CSharpCourseChapter1.csproj": {
+              "projectPath": "E:\\Coriolis\\Dev\\Git\\UdemyCsharpProgrammingCourse\\TestProject4Education\\TestProject4Education\\CSharpCourseChapter1.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
