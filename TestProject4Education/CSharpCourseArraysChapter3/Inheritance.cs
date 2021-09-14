@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CSharpCourseChapter1
+namespace CSharpCourseOOPChapter3
 {
     public class BankTerminal
     {

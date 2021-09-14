@@ -1,5 +1,4 @@
-﻿using CSharpCourseChapter1;
-using CSharpCourseOOPChapter3;
+﻿using CSharpCourseOOPChapter3;
 using System;
 using System.Collections.Generic;
 
@@ -9,12 +8,31 @@ namespace CSharpCourseArraysChapter3
     {
         static void Main(string[] args)
         {
+
+        }
+
+        static void PolymorphismTest()
+        {
+            Shapes[] shapes = new Shapes[2];
+            shapes[0] = new Triangle(10, 20, 30);
+            shapes[1] = new Rectangle(5, 10);
+
+            foreach (Shapes shape in shapes)
+            {
+                shape.Draw();
+                Console.WriteLine(shape.Perimeter());
+            }
+
+            Console.ReadLine();
+        }
+
+        static void InheritanceTest()
+        {
             ModelXTeminal terminal1 = new ModelXTeminal("123");
             terminal1.Connect();
 
             Console.ReadLine();
         }
-
 
         static void RefSwapTest()
         {
