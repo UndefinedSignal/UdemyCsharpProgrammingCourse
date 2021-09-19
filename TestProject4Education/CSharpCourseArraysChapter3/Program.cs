@@ -22,6 +22,13 @@ namespace CSharpCourseArraysChapter3
             ms.Push('a'); // converted to int
             //ms.Push(0.3);
 
+            foreach(var item in ms)
+            {
+                Console.WriteLine(item);
+            }
+
+            Console.ReadLine();
+
             while(ms.Count != 0)
             {
                 Console.WriteLine(ms.Peek());

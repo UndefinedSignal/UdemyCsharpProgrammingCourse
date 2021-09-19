@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CSharpCourseOOPChapter3
 {
-    public class MyStack<T>
+    public class MyStack<T> : IEnumerable<T>
     {
         private T[] _items;
         public int Count { get; private set; }
@@ -58,6 +59,49 @@ namespace CSharpCourseOOPChapter3
             }
 
             return _items[Count - 1];
+        }
+
+        public IEnumerator<T> GetEnumerator()
+        {
+            return new StackEnumerator<T>(_items, Count);
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
+        }
+    }
+
+    public class StackEnumerator<T> : IEnumerator<T>
+    {
+        private readonly T[] array;
+        private readonly int count;
+        private int position;
+
+        public StackEnumerator(T[] array, int count)
+        {
+            this.array = array;
+            this.count = count;
+
+            position = count;
+        }
+        public T Current => array[position];
+
+        object IEnumerator.Current => array[position];
+
+        public void Dispose()
+        {
+        }
+
+        public bool MoveNext()
+        {
+            position--;
+            return position >= 0;
+        }
+
+        public void Reset()
+        {
+            position = count;
         }
     }
 }
