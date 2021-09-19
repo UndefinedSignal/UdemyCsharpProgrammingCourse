@@ -8,7 +8,45 @@ namespace CSharpCourseArraysChapter3
     {
         static void Main(string[] args)
         {
+            MyStackTest();
+        }
+        
+        static void MyStackTest()
+        {
+            MyStack<int> ms = new MyStack<int>();
+            ms.Push(1);
+            ms.Push(2);
+            ms.Push(3);
+            //ms.Push("qwerty");
+            //ms.Push(false);
+            ms.Push('a'); // converted to int
+            //ms.Push(0.3);
 
+            while(ms.Count != 0)
+            {
+                Console.WriteLine(ms.Peek());
+                ms.Pop();
+            }
+
+            Console.WriteLine(ms.Peek()); // Trhow exception
+
+            ms.Pop();
+
+            Console.WriteLine(ms.Peek());
+
+            ms.Push(3);
+            ms.Push(4);
+            ms.Push(5);
+
+            Console.WriteLine(ms.Peek());
+            Console.ReadLine();
+        }
+
+        static void InterfaceTest()
+        {
+            IBaseCollection collection = new BaseList(4);
+            collection.Add(1);
+            collection.Add(2);
         }
 
         static void PolymorphismTest()
