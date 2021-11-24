@@ -8,9 +8,147 @@ namespace CSharpCourseArraysChapter3
     {
         static void Main(string[] args)
         {
-            MyStackTest();
+            HangmanGame();
         }
-        
+
+        static void HangmanGame()
+        {
+            Hangman game = new Hangman(5);
+            Console.WriteLine("Welcome to the Hangman game X_X!");
+            Console.WriteLine("Try to quess what a word is hidden behind \"_\"!");
+            Console.WriteLine($"Current \"showed\" word is: {game.ShowWord()}!");
+            while (true)
+            {
+                Console.Write("Pick a letter: ");
+                char.TryParse(Console.ReadLine(), out char playerInput);
+
+                Hangman.handleState state = game.Process(playerInput);
+
+                if (state == Hangman.handleState.CorrectChar)
+                {
+                    Console.WriteLine("Correct char!");
+                    Console.WriteLine($"Current \"showed\" word is: {game.ShowWord()}!");
+                    continue;
+                }else if(state == Hangman.handleState.OutOfChances)
+                {
+                    Console.WriteLine("Out of chances! You lose!");
+                    break;
+                }
+                else if(state == Hangman.handleState.IncorrectChar)
+                {
+                    Console.WriteLine("Incorrect char, try another one!");
+                    Console.WriteLine($"Current \"showed\" word is: {game.ShowWord()}!");
+                    continue;
+                }
+                else if(state == Hangman.handleState.Winner)
+                {
+                    Console.WriteLine("Congratulations! You win the Hangman game!");
+                    break;
+                }
+            }
+            Console.ReadLine();
+        }
+
+        static void TicTacToe()
+        {
+            TicTacToe game = new TicTacToe();
+            while (true)
+            {
+                //Console.Clear();
+                game.Draw();
+                Console.WriteLine($"Enter a 2 coordinates of a field like \"22\" or \"01\"");
+                int.TryParse(Console.ReadLine(), out int playerInput1);
+                int.TryParse(Console.ReadLine(), out int playerInput2);
+
+                if (!game.SetPoint(playerInput1, playerInput2))
+                {
+                    Console.WriteLine("The point is already taken. Choose another!");
+                    Console.ReadLine();
+                    continue;
+                }
+                if (game.Step())
+                {
+                    Console.WriteLine("Congratulations!");
+                    Console.ReadLine();
+                    break;
+                }
+            }
+        }
+
+        static void TestGame()
+        {
+            int chances = 0;
+            int limit = 5;
+            NumbersGame game = new NumbersGame();
+            Console.WriteLine("Welcome to the game!");
+            Console.WriteLine("Who will try to guess a secret number?");
+            Console.WriteLine("Type 0 to play againts AI");
+            Console.WriteLine("Type 1 to play with AI");
+            int.TryParse(Console.ReadLine(), out int gamemode);
+            Console.Write("Enter the first number: ");
+            int.TryParse(Console.ReadLine(), out int firstNumber);
+            Console.Write("Enter the second number: ");
+            int.TryParse(Console.ReadLine(), out int secondNumber);
+            if (gamemode < 1)
+            {
+                game.ShuffleGame(firstNumber, secondNumber);
+
+                while (true)
+                {
+                    chances++;
+                    if (game.AIPickNumber())
+                    {
+                        Console.WriteLine("Correct!");
+                        break;
+                    }
+                    if (chances >= limit)
+                    {
+                        Console.WriteLine("Out of limit attempts");
+                        break;
+                    }
+                }
+
+            }
+            else
+            {
+                game.ShuffleGame(firstNumber, secondNumber);
+
+                while (true)
+                {
+                    chances++;
+                    int.TryParse(Console.ReadLine(), out int playerInput);
+                    if (game.PickNumber(playerInput))
+                    {
+                        Console.WriteLine("Correct!");
+                        break;
+                    }
+                    if (chances >= limit)
+                    {
+                        Console.WriteLine("Out of limit attempts");
+                        break;
+                    }
+                }
+            }
+        }
+
+        static void CompexClassTest()
+        {
+            /*
+                * Разработать класс представляющий комплексное число. Класс должен содержать два свойства для представления вещестенной (double)
+                * и мнимой части (double). Сделать так, чтобы создать экземпляр класса без передачи соответствующих аргументов было невозможно.
+                * Создать два метода, реализующих сложение и вычитание двух комплексных чисел. Чтобы сложить два комплексных числа необходимо 
+                * по отдельности сложить их вещественные и мнимые части.
+                * То есть, предположим, что мы имеет два комплексных числа. У первого вещественная часть равна 1, мнимая 2. 
+                * У второго вещественная часть равна 3, мнимая 1. Результатам будет комплексное число, где вещественная часть равна 1+3=4, а мнимая равна 2 + 1 = 3.
+                * Операция вычитания работает по тому же принципу, что и сложение (ну, только вычитание).
+            */
+            Complex c1 = new Complex(1, 1);
+            Complex c2 = new Complex(1, 2);
+
+            Complex result = c1.Plus(c2);
+            
+            Console.WriteLine($"{result.real} {result.imaginary}");
+        }
         static void MyStackTest()
         {
             MyStack<int> ms = new MyStack<int>();

@@ -9,4 +9,10 @@
     <ProjectReference Include="..\TestProject4Education\CSharpCourseChapter1.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="Handgman\WordsStockRus.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
